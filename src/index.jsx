@@ -9,9 +9,9 @@ import Home from './pages/home';
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <Router>
+            <Header/>
             <Routes>
-                <Route element={<Header />} />
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Home/>}/>
             </Routes>
         </Router>
     </React.StrictMode>,
