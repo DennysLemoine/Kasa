@@ -8,8 +8,7 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0 60px 0;
-  padding: 0 70px 0 25px;
+  margin: 45px 0 60px 0;
   font-family: ${fonts.primary.name};
 `
 
@@ -19,7 +18,7 @@ const StyledLogo = styled.img`
 `
 
 const StyledLink = styled(Link)`
-  padding: 5px 20px;
+  padding: 0 0 0 60px;
   color: ${colors.primary};
   text-decoration: none;
   font-size: 17px;
