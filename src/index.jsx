@@ -6,6 +6,7 @@ import './styles/index.css';
 import './styles/App.css';
 import Header from './components/header/header';
 import Home from "./pages/home/home";
+import Footer from "./components/footer/footer";
 
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
                     <Route exact path="/" element={<Home/>}/>
                 </Routes>
             </main>
+            <Footer/>
         </Router>
     </React.StrictMode>,
 );
