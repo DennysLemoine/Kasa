@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0 60px 0;
+    font-family: 'Montserrat', serif;
+}
+
+.logoKasa {
+    width: 210px;
+    height: 100%;
+}
+
+.navLinks a {
+    padding: 0 0 0 60px;
+    color: #ff6060;
+    text-decoration: none;
+    font-size: 17px;
+}
