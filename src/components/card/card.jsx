@@ -3,10 +3,10 @@ import card from "./card.css";
 
 function Card() {
     return (
-        <div>
+        <section className='cardContainer'>
             {data.map((logements) => (
                 <a key={logements.id} className="cardWrapper">
-                    <article>
+                    <article className="articleWrapper">
                         <figure className="figureCard">
                             <img className="imageCard" src={logements.cover} alt=""/>
                             <figcaption className="figcaptionCard">
@@ -16,7 +16,7 @@ function Card() {
                     </article>
                 </a>
             ))}
-        </div>
+        </section>
     )
 }
 

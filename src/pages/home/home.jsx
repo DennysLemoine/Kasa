@@ -10,9 +10,7 @@ function Home() {
                 <img className='imgContainer' src={homeImg} alt=""/>
                 <h1 className='h1Container'>Chez vous, partout et ailleurs</h1>
             </div>
-            <section className='cardContainer'>
-                <Card/>
-            </section>
+            <Card/>
         </div>
     )
 }

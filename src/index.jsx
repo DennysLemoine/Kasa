@@ -1,6 +1,7 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import './styles/normalizer.css'
 import './styles/index.css';
 import './styles/App.css';
 import Header from './components/header/header';
