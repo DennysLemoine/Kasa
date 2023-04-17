@@ -1,26 +1,35 @@
 .sectionScroll {
+    display: flex;
+    flex-direction: column;
     max-width: 1025px;
     margin: 30px auto 30px auto;
     font-family: 'Montserrat', serif;
 }
 
+.show-hide {
+
+}
+
+.arrowNav {
+    width: 18px;
+}
+
 .scrollContainer {
-    width: 335px;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
     background-color: #ff6060;
     border-radius: 5px;
     color: white;
+    padding: 6px 26px 6px 20px;
 }
 
-.scrollContainer p {
-    padding: 6px 0 6px 20px;
-}
 
 .scrollContent {
     background-color: #f6f6f6;
     color: #ff6060;
     border-radius: 0 0 5px 5px;
     margin-bottom: 30px;
+    padding: 6px 0 6px 20px;
     /*display: none;*/
 }
 
