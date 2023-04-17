@@ -12,7 +12,7 @@ function Header() {
             </a>
             <nav className='navLinks'>
                 <a href="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</a>
-                <a href="/" className={location.pathname === './informations/informations' ? 'active' : ''}>À Propos</a>
+                <a href="/informations" className={location.pathname === '/informations' ? 'active' : ''}>À Propos</a>
             </nav>
         </header>
     )

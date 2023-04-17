@@ -1,0 +1,29 @@
+.sectionScroll {
+    max-width: 1025px;
+    margin: 30px auto 30px auto;
+    font-family: 'Montserrat', serif;
+}
+
+.scrollContainer {
+    width: 335px;
+    height: auto;
+    background-color: #ff6060;
+    border-radius: 5px;
+    color: white;
+}
+
+.scrollContainer p {
+    padding: 6px 0 6px 20px;
+}
+
+.scrollContent {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 30px;
+    /*display: none;*/
+}
+
+.scrollText {
+
+}
