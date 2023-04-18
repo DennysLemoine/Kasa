@@ -5,12 +5,22 @@ import lodging from './lodging.css'
 
 function Lodging() {
     const {id} = useParams();
+    const logement = logements.find(l => l.id === id);
+    const host = [logement.host];
 
     return(
-        <div className='lodgingImg'>
-            <img src={logements.cover} alt=""/>
-            <h2 className="cardTitle">{logements.title}</h2>
-        </div>
+        <section>
+            <div>
+                <img className='lodgingImg' src={logement.cover} alt=""/>
+            </div>
+            <div>
+                <h2>{logement.title}</h2>
+                <p>{logement.location}</p>
+                <div>
+                    {host.map}
+                </div>
+            </div>
+        </section>
     )
 }
 
