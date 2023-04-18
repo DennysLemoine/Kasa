@@ -6,6 +6,7 @@ import informationImg from '../../assets/Paysage02.png'
 import arrowImg from '../../assets/Arrow.svg'
 
 function Informations() {
+    /*Utilisation des useState pour récupérer la valeur initiale des index pour les modifier après*/
     const [showDiv, setShowDiv] = useState([false, false, false, false]);
     const [rotateImg, setRotateImg] = useState([false, false, false, false]);
     const [open, setOpen] = useState([false, false, false, false]);
@@ -74,6 +75,5 @@ function Informations() {
         </div>
     )
 }
-
 
 export default Informations

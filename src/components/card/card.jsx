@@ -1,7 +1,6 @@
-import data from '../../logements.json'
 import card from "./card.css";
 
-function Card() {
+function Card({data}) {
     return (
         <section className='cardContainer'>
             {data.map((logements) => (
