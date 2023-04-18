@@ -52,6 +52,6 @@
     display: block;
 }
 
-.scrollText {
-
+.rotate .arrowNav {
+    transform: rotate(180deg);
 }

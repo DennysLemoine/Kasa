@@ -5,6 +5,7 @@ import arrowImg from '../../assets/Arrow.svg'
 
 function Informations() {
     const [showDiv, setShowDiv] = useState([false, false, false, false]);
+    const [rotateImg, setRotateImg] = useState([false, false, false, false]);
 
     const toggleDiv = (index) => {
         const newShowDiv = [...showDiv];
@@ -12,18 +13,22 @@ function Informations() {
         setShowDiv(newShowDiv);
     };
 
+    const rotateImage = (index) => {
+        const newRotateImg = [...rotateImg];
+        newRotateImg[index] = !newRotateImg[index];
+        setRotateImg(newRotateImg)
+    };
+
     return (
         <div>
-            {/*divContainer vient de Home.css car même paramètres*/}
             <div className='divContainer'>
                 <img className='imgContainer' src={informationImg} alt=""/>
             </div>
             <section className='sectionScroll'>
                 <div className='show-hide'>
-                    <div className='scrollContainer' onClick={() => toggleDiv(0)} style={{marginBottom: showDiv[0] ? 0 : "20px"}}>
+                    <div className={`scrollContainer ${rotateImg[0] ? 'rotate' : ''}`} onClick={() => {toggleDiv(0); rotateImage(0)}} style={{marginBottom: showDiv[0] ? 0 : "20px"}}>
                         <p>Fiabilité</p>
-                        <img className='arrowNav' src={arrowImg}
-                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </div>
                     <div className={`scrollContent ${showDiv[0] ? "display" : ""}`} >
                         <p className='scrollText'>Les annonces postées sur Kasa garantissent une fiabilité totale. Les
@@ -32,10 +37,9 @@ function Informations() {
                     </div>
                 </div>
                 <div className='show-hide'>
-                    <div className='scrollContainer' onClick={() => toggleDiv(1)} style={{marginBottom: showDiv[1] ? 0 : "20px"}}>
+                    <div className={`scrollContainer ${rotateImg[1] ? 'rotate' : ''}`} onClick={() => {toggleDiv(1); rotateImage(1)}} style={{marginBottom: showDiv[1] ? 0 : "20px"}}>
                         <p>Respect</p>
-                        <img className='arrowNav' src={arrowImg}
-                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </div>
                     <div className={`scrollContent ${showDiv[1] ? "display" : ""}`}>
                         <p className='scrollText'>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -44,10 +48,9 @@ function Informations() {
                     </div>
                 </div>
                 <div className='show-hide'>
-                    <div className='scrollContainer' onClick={() => toggleDiv(2)} style={{marginBottom: showDiv[2] ? 0 : "20px"}}>
+                    <div className={`scrollContainer ${rotateImg[2] ? 'rotate' : ''}`} onClick={() => {toggleDiv(2); rotateImage(2)}} style={{marginBottom: showDiv[2] ? 0 : "20px"}}>
                         <p>Service</p>
-                        <img className='arrowNav' src={arrowImg}
-                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </div>
                     <div className={`scrollContent ${showDiv[2] ? "display" : ""}`}>
                         <p className='scrollText'>Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -55,10 +58,9 @@ function Informations() {
                     </div>
                 </div>
                 <div className='show-hide'>
-                    <div className='scrollContainer' onClick={() => toggleDiv(3)} style={{marginBottom: showDiv[3] ? 0 : "20px"}}>
+                    <div className={`scrollContainer ${rotateImg[3] ? 'rotate' : ''}`} onClick={() => {toggleDiv(3); rotateImage(3)}} style={{marginBottom: showDiv[3] ? 0 : "20px"}}>
                         <p>Sécurité</p>
-                        <img className='arrowNav' src={arrowImg}
-                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </div>
                     <div className={`scrollContent ${showDiv[3] ? "display" : ""}`}>
                         <p className='scrollText'>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
