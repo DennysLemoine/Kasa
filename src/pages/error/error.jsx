@@ -1,5 +1,6 @@
-import error from './error.css'
 import React from "react";
+import error from './error.css'
+
 function Error() {
     return(
         <div className='divError'>
