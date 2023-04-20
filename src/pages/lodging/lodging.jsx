@@ -3,6 +3,7 @@ import logements from '../../logements.json'
 import {useParams} from "react-router-dom";
 import lodging from './lodging.css'
 
+import CollapseContent from '../../components/collapse/collapse'
 import Slider from '../../components/lodgingpage/slider'
 import Hosts from "../../components/lodgingpage/hosts";
 import Tags from "../../components/lodgingpage/tags";
@@ -32,8 +33,8 @@ function Lodging() {
                 </div>
             </div>
             <div className='detailsContainer'>
-                <Description description={description}/>
-                <Equipments equipment={equipments}/>
+                <CollapseContent title='Description' content={description} />
+                <CollapseContent title='Équipements' content={equipments} />
             </div>
         </section>
     )

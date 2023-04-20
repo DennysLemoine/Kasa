@@ -58,6 +58,6 @@
     display: block;
 }
 
-.rotate .arrowNav {
+.arrowNav.rotate img {
     transform: rotate(180deg);
 }
