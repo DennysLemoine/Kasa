@@ -3,6 +3,10 @@
     height: 225px;
 }
 
+.collapseContainer {
+    margin-bottom: 200px;
+}
+
 .imgContainer {
     width: 100%;
     height: 100%;
@@ -15,11 +19,12 @@
     display: flex;
     flex-direction: column;
     max-width: 1025px;
-    margin: 30px auto 250px auto;
+    margin: 30px auto 30px auto;
     font-family: 'Montserrat', serif;
 }
 
 .arrowNav {
+    transform: rotate(180deg);
     width: 18px;
 }
 
@@ -36,6 +41,9 @@
     border: none;
 }
 
+.titleCollapse {
+    font-weight: 500;
+}
 
 .scrollContent {
     background-color: #f6f6f6;
