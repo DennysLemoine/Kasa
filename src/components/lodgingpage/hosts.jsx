@@ -7,8 +7,10 @@ function Hosts({host}) {
 
     return(
         <div className='hostContainer'>
-            <p>{hostNameArray[0]}</p>
-            <p>{hostNameArray[1]}</p>
+            <div className='hostNameContainer'>
+                <p className='hostName'>{hostNameArray[0]}</p>
+                <p className='hostName'>{hostNameArray[1]}</p>
+            </div>
             <img src={host.picture} alt="Photo du propiètaire" className='hostPicture'/>
         </div>
     )

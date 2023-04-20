@@ -1,3 +1,11 @@
+.listingContainer {
+    color: #ff6060;
+    font-family: 'Montserrat', serif;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
 .divLodgingImg {
     position: relative;
     height: 415px;
@@ -19,6 +27,7 @@
     right: 0;
     top: 40%;
     padding-right: 20px;
+    cursor: pointer
 }
 
 .prevArrow {
@@ -28,15 +37,41 @@
     left: 0;
     top: 40%;
     padding-left: 20px;
+    cursor: pointer
 }
 
-/*.hostContainer {*/
-/*    display: flex;*/
-/*}*/
+.lodgingTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tagsUl {
+    display: flex;
+    gap: 10px;
+}
+
+.tagLi {
+    color: white;
+    background-color: #ff6060;
+    padding: 1px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.hostContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hostNameContainer {
+    display: flex;
+    flex-direction: column;
+}
 
 .hostName {
-    margin-right: 10px;
-    white-space: pre-line;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hostPicture {
@@ -44,15 +79,18 @@
     width: 64px;
     border-radius: 50px;
     object-fit: cover;
+    margin-left: 10px;
 }
 
 .starsContainer {
     display: flex;
+    justify-content: flex-end;
 }
 
 .starLogo {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
 }
 
 .arrowNav {
@@ -90,4 +128,9 @@
 
 .rotate .arrowNav {
     transform: rotate(180deg);
+}
+
+.detailsContainer {
+    display: flex;
+    justify-content: space-between;
 }

@@ -20,16 +20,18 @@ function Lodging() {
     return (
         <section>
             <Slider slides={pictures}/>
-            <div>
-                <h2>{title}</h2>
-                <p>{location}</p>
+            <div className='listingContainer'>
+                <div>
+                    <h2 className='lodgingTitle'>{title}</h2>
+                    <p className='lodgingP'>{location}</p>
+                    <Tags tags={tags}/>
+                </div>
+                <div>
+                    <Hosts host={host}/>
+                    <Rating rating={rating}/>
+                </div>
             </div>
-            <Hosts host={host}/>
-            <div>
-                <Tags tags={tags}/>
-            </div>
-            <Rating rating={rating}/>
-            <div>
+            <div className='detailsContainer'>
                 <Description description={description}/>
                 <Equipments equipment={equipments}/>
             </div>
