@@ -37,39 +37,69 @@ function Informations() {
             </div>
             <section className='sectionScroll'>
                 <div>
-                    <button className={`scrollContainer ${rotateImg[0] ? 'rotate' : ''}`} onClick={() => {toggleDiv(0); rotateImage(0); openCollapse(0)}} style={{marginBottom: showDiv[0] ? 0 : "20px"}}>
+                    <button className={`scrollContainer ${rotateImg[0] ? 'rotate' : ''}`} onClick={() => {
+                        toggleDiv(0);
+                        rotateImage(0);
+                        openCollapse(0)
+                    }} style={{marginBottom: showDiv[0] ? 0 : "20px"}}>
                         {open[0] ? 'Fiabilité' : 'Fiabilité'}
-                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg}
+                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </button>
                     <Collapse isOpened={open[0]}>
-                            <p className='scrollContent'>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+                        <p className='scrollContent'>Les annonces postées sur Kasa garantissent une fiabilité totale.
+                            Les photos sont conformes aux logements, et toutes les informations sont régulièrement
+                            vérifiées par nos équipes.</p>
                     </Collapse>
                 </div>
                 <div>
-                    <button className={`scrollContainer ${rotateImg[1] ? 'rotate' : ''}`} onClick={() => {toggleDiv(1); rotateImage(1); openCollapse(1)}} style={{marginBottom: showDiv[1] ? 0 : "20px"}}>
+                    <button className={`scrollContainer ${rotateImg[1] ? 'rotate' : ''}`} onClick={() => {
+                        toggleDiv(1);
+                        rotateImage(1);
+                        openCollapse(1)
+                    }} style={{marginBottom: showDiv[1] ? 0 : "20px"}}>
                         {open[1] ? 'Respect' : 'Respect'}
-                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg}
+                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </button>
                     <Collapse isOpened={open[1]}>
-                        <p className='scrollContent'>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+                        <p className='scrollContent'>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+                            comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de
+                            notre plateforme.</p>
                     </Collapse>
                 </div>
                 <div>
-                    <button className={`scrollContainer ${rotateImg[2] ? 'rotate' : ''}`} onClick={() => {toggleDiv(2); rotateImage(2); openCollapse(2)}} style={{marginBottom: showDiv[2] ? 0 : "20px"}}>
+                    <button className={`scrollContainer ${rotateImg[2] ? 'rotate' : ''}`} onClick={() => {
+                        toggleDiv(2);
+                        rotateImage(2);
+                        openCollapse(2)
+                    }} style={{marginBottom: showDiv[2] ? 0 : "20px"}}>
                         {open[2] ? 'Service' : 'Service'}
-                        <img className='arrowNav' src={arrowImg} alt="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."/>
+                        <img className='arrowNav' src={arrowImg}
+                             alt="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."/>
                     </button>
                     <Collapse isOpened={open[2]}>
-                        <p className='scrollContent'>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+                        <p className='scrollContent'>Les annonces postées sur Kasa garantissent une fiabilité totale.
+                            Les photos sont conformes aux logements, et toutes les informations sont régulièrement
+                            vérifiées par nos équipes.</p>
                     </Collapse>
                 </div>
                 <div>
-                    <button className={`scrollContainer ${rotateImg[3] ? 'rotate' : ''}`} onClick={() => {toggleDiv(3); rotateImage(3); openCollapse(3)}} style={{marginBottom: showDiv[3] ? 0 : "20px"}}>
+                    <button className={`scrollContainer ${rotateImg[3] ? 'rotate' : ''}`} onClick={() => {
+                        toggleDiv(3);
+                        rotateImage(3);
+                        openCollapse(3)
+                    }} style={{marginBottom: showDiv[3] ? 0 : "20px"}}>
                         {open[3] ? 'Sécurité' : 'Sécurité'}
-                        <img className='arrowNav' src={arrowImg} alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
+                        <img className='arrowNav' src={arrowImg}
+                             alt="Flèche de navigation pour ouvrir/fermer la zone de texte"/>
                     </button>
                     <Collapse isOpened={open[3]}>
-                        <p className='scrollContent'>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
+                        <p className='scrollContent'>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+                            pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos
+                            services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos
+                            équipes de vérifier que les standards sont bien respectés. Nous organisons également des
+                            ateliers sur la sécurité domestique pour nos hôtes.</p>
                     </Collapse>
                 </div>
             </section>

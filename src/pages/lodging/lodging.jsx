@@ -7,6 +7,8 @@ import Slider from '../../components/lodgingpage/slider'
 import Hosts from "../../components/lodgingpage/hosts";
 import Tags from "../../components/lodgingpage/tags";
 import Rating from "../../components/lodgingpage/rating";
+import Description from "../../components/lodgingpage/descriptions";
+import Equipments from "../../components/lodgingpage/equipments";
 
 function Lodging() {
 
@@ -22,13 +24,15 @@ function Lodging() {
                 <h2>{title}</h2>
                 <p>{location}</p>
             </div>
-            <div className='hostContainer'>
-                <Hosts host={host}/>
-            </div>
+            <Hosts host={host}/>
             <div>
                 <Tags tags={tags}/>
             </div>
-                <Rating rating={rating}/>
+            <Rating rating={rating}/>
+            <div>
+                <Description description={description}/>
+                <Equipments equipment={equipments}/>
+            </div>
         </section>
     )
 }
