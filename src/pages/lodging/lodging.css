@@ -45,3 +45,12 @@
     border-radius: 50px;
     object-fit: cover;
 }
+
+.starsContainer {
+    display: flex;
+}
+
+.starLogo {
+    width: 25px;
+    height: 25px;
+}
