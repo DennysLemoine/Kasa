@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 45px 0 60px 0;
+    margin: 45px 0 20px 0;
     font-family: 'Montserrat', serif;
 }
 
@@ -20,4 +20,32 @@
 
 .navLinks a.active {
     text-decoration: underline #ff6060;
+}
+
+@media(max-width: 880px) {
+
+    .logoKasa {
+        width: 140px;
+    }
+
+    .navLinks a {
+        text-transform: uppercase;
+        padding: 0 0 0 30px;
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .header {
+
+        margin: 20px 0 20px 0;
+
+    }
+
+    .navLinks a {
+        padding: 0 0 0 12px;
+    }
+
 }

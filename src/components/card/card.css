@@ -15,7 +15,7 @@
 .cardWrapper {
     display: block;
     height: 340px;
-    width: 340px;
+    width: auto;
 
 }
 
@@ -26,11 +26,6 @@
 .articleWrapper {
     height: 100%
 }
-
-/*.card {
-    grid-column: auto;
-    grid-row: auto;
-}*/
 
 .figureCard {
     position: relative;
@@ -65,4 +60,38 @@
     font-weight: 400;
     font-size: 1rem;
     padding: 20px 120px 15px 20px
+}
+
+@media(max-width: 1050px) {
+
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 35px 30px;
+        gap: 35px;
+    }
+
+}
+
+@media(max-width: 880px) {
+
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 20px;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: white;
+        padding: 0;
+    }
+
+    .cardWrapper {
+        height: 255px;
+        width: 100%;
+    }
+
 }

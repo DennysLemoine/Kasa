@@ -10,7 +10,7 @@
 }
 
 .kasaLogoFooter {
-    margin: auto;
+    margin: 60px auto 50px auto;
     width: 120px;
     height: auto;
 }
@@ -19,4 +19,16 @@
     font-family: 'Montserrat', serif;
     color: white;
     text-align: center;
+}
+
+@media(max-width: 480px) {
+
+    .kasaLogoFooter {
+        margin: 60px auto 35px auto;
+    }
+
+    .pFooter {
+        font-size: 12px;
+    }
+
 }

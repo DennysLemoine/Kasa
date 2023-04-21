@@ -1,6 +1,7 @@
 .divContainer {
     position: relative;
     height: 225px;
+    margin-top: 55px;
 }
 
 .imgContainer {
@@ -17,7 +18,32 @@
     font-weight: 400;
     font-size: 2.5rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+@media(max-width: 880px) {
+
+    .h1Container {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+
+    .h1Container {
+        padding-left: 20px;
+        padding-right: 90px;
+        font-size: 1.6rem;
+        justify-content: flex-start;
+    }
+
 }

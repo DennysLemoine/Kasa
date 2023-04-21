@@ -16,9 +16,20 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media(max-width: 480px) {
+
+  .container {
+    width: 90%;
+  }
+
 }
