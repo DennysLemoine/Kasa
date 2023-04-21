@@ -1,0 +1,146 @@
+.listingContainer {
+    color: #ff6060;
+    font-family: 'Montserrat', serif;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.divLodgingImg {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.lodgingImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.nextArrow {
+    position: absolute;
+    height: 80px;
+    width: auto;
+    right: 0;
+    top: 40%;
+    padding-right: 20px;
+    cursor: pointer
+}
+
+.prevArrow {
+    position: absolute;
+    height: 80px;
+    width: auto;
+    left: 0;
+    top: 40%;
+    padding-left: 20px;
+    cursor: pointer
+}
+
+.currentIndex {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+.lodgingTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tagsUl {
+    display: flex;
+    gap: 10px;
+}
+
+.tagLi {
+    color: white;
+    background-color: #ff6060;
+    padding: 1px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.hostContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hostNameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.hostName {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hostPicture {
+    height: 64px;
+    width: 64px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.starsContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.starLogo {
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
+}
+
+.arrowNav {
+    width: 18px;
+}
+
+.scrollContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    cursor: pointer;
+    background-color: #ff6060;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 26px 6px 20px;
+    border: none;
+}
+
+
+.scrollContent {
+    width: 580px;
+    height: auto;
+    background-color: #f6f6f6;
+    color: #ff6060;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 30px;
+    padding: 20px 20px 30px 20px;
+    /*display: none;*/
+}
+
+.scrollContent.display {
+    display: block;
+}
+
+.rotate .arrowNav {
+    transform: rotate(180deg);
+}
+
+.detailsContainer {
+    display: flex;
+    justify-content: space-between;
+}
