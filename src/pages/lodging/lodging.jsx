@@ -16,6 +16,10 @@ function Lodging() {
     const {id} = useParams();
     const logement = logements.find(l => l.id === id);
 
+    if (!logement) {
+        window.location.replace('/error');
+    }
+
     const {title, cover, pictures, description, host, rating, location, equipments, tags} = logement;
 
     return (
