@@ -40,6 +40,16 @@
     cursor: pointer
 }
 
+.currentIndex {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
 .lodgingTitle {
     font-size: 24px;
     font-weight: 500;

@@ -33,8 +33,18 @@ function Lodging() {
                 </div>
             </div>
             <div className='detailsContainer'>
-                <CollapseContent title='Description' content={description} />
-                <CollapseContent title='Équipements' content={equipments} />
+                <div>
+                    <CollapseContent title='Description' content={description} />
+                </div>
+                <div>
+                    <CollapseContent title='Équipements' content=
+                        {
+                        <ul>
+                            {equipments.map((equipment) => <li key={equipment}>{equipment}</li>)}
+                        </ul>
+                        }
+                    />
+                </div>
             </div>
         </section>
     )

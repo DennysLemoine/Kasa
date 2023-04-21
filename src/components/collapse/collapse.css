@@ -32,7 +32,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     cursor: pointer;
     background-color: #ff6060;
     border-radius: 5px;
@@ -42,7 +41,7 @@
 }
 
 .titleCollapse {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .scrollContent {

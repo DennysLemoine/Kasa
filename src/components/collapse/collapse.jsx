@@ -15,7 +15,7 @@ function CollapseContent(props) {
     const arrowClassName = isOpened ? 'arrowNav rotate' : 'arrowNav';
 
     return(
-        <div className='sectionScroll'>
+        <>
             <div className='scrollContainer' onClick={toggle}>
                 <h2 className='titleCollapse'>{props.title}</h2>
                 <div className={arrowClassName}>
@@ -25,7 +25,7 @@ function CollapseContent(props) {
             {isOpened && (
                 <p className='scrollContent'>{ props.content }</p>
             )}
-        </div>
+        </>
     )
 
 }

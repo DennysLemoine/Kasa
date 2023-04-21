@@ -15,11 +15,17 @@ function Slider({slides}) {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
 
-    return(
+    const hideArrows = length <= 1;
+    const hideIndex = length <= 1;
+
+return(
         <div className='divLodgingImg'>
             <img className='lodgingImg' src={slides[current]} alt=""/>
-            <img className='nextArrow' src={nextArrow} alt="" onClick={nextSlide}/>
-            <img className='prevArrow' src={prevArrow} alt="" onClick={prevSlide}/>
+            <img className='nextArrow' src={nextArrow} alt="Flèche de navigation" onClick={nextSlide} style={{display: hideArrows ? 'none' : 'block'}}/>
+            <img className='prevArrow' src={prevArrow} alt="Flèche de navigation" onClick={prevSlide} style={{display: hideArrows ? 'none' : 'block'}}/>
+            <div className='currentIndex'style={{display: hideIndex ? 'none' : 'block'}}>
+                {current + 1}/{length}
+            </div>
         </div>
     )
 }
