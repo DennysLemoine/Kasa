@@ -37,10 +37,10 @@ function Lodging() {
                 </div>
             </div>
             <div className='detailsContainer'>
-                <div>
+                <div className='informationContainer'>
                     <CollapseContent title='Description' content={description} />
                 </div>
-                <div>
+                <div className='informationContainer'>
                     <CollapseContent title='Équipements' content=
                         {
                         <ul>

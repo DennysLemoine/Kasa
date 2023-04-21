@@ -1,11 +1,12 @@
 import card from "./card.css";
+import {Link} from "react-router-dom";
 
 function Card({data}) {
 
     return (
         <section className='cardContainer'>
             {data.map((logements) => (
-                <a href={'../../lodging/'+logements.id} key={logements.id} className="cardWrapper">
+                <Link to={'../../lodging/'+logements.id} key={logements.id} className="cardWrapper">
                     <article className="articleWrapper">
                         <figure className="figureCard">
                             <img className="imageCard" src={logements.cover} alt="Miniature du logements"/>
@@ -14,7 +15,7 @@ function Card({data}) {
                             </figcaption>
                         </figure>
                     </article>
-                </a>
+                </Link>
             ))}
         </section>
     )
