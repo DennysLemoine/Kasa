@@ -1,4 +1,6 @@
 import {useLocation} from "react-router-dom";
+import {Link} from "react-router-dom";
+
 import header from './header.css'
 import kasaLogo from '../../assets/Kasa_logo.svg'
 
@@ -7,12 +9,10 @@ function Header() {
 
     return (
         <header className='header'>
-            <a className='logoKasa'>
-                <img src={kasaLogo} alt="Logo du site internet Kasa"/>
-            </a>
+            <img className='logoKasa' src={kasaLogo} alt="Logo du site internet Kasa"/>
             <nav className='navLinks'>
-                <a href="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</a>
-                <a href="/informations" className={location.pathname === '/informations' ? 'active' : ''}>À Propos</a>
+                <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</Link>
+                <Link to="/informations" className={location.pathname === '/informations' ? 'active' : ''}>À Propos</Link>
             </nav>
         </header>
     )
