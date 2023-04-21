@@ -31,7 +31,7 @@ function Lodging() {
                     <p className='lodgingP'>{location}</p>
                     <Tags tags={tags}/>
                 </div>
-                <div>
+                <div className='hostRatingContainer'>
                     <Hosts host={host}/>
                     <Rating rating={rating}/>
                 </div>

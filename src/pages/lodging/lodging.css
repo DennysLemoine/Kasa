@@ -151,4 +151,73 @@
 .detailsContainer {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+}
+
+
+@media(max-width: 480px) {
+
+    .nextArrow {
+        position: absolute;
+        height: 25px;
+        width: auto;
+        right: 0;
+        top: 47%;
+        padding-right: 20px;
+        cursor: pointer
+    }
+
+    .prevArrow {
+        position: absolute;
+        height: 25px;
+        width: auto;
+        left: 0;
+        top: 47%;
+        padding-left: 20px;
+        cursor: pointer
+    }
+
+    .currentIndex{
+        font-size: 12px;
+    }
+
+    .divLodgingImg {
+        margin-bottom: 10px;
+    }
+
+    .listingContainer {
+        display: block;
+    }
+
+    .lodgingTitle {
+        margin-bottom: 10px;
+    }
+
+    .tagLi {
+        border-radius: 6px;
+        margin-bottom: 20px;
+    }
+
+    .hostRatingContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-bottom: 25px;
+    }
+
+    .hostContainer {
+        margin-bottom: 0;
+    }
+
+    .detailsContainer{
+        display: block;
+        margin-bottom: 200px;
+    }
+
+    .informationContainer{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
 }

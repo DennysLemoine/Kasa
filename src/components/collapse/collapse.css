@@ -60,3 +60,14 @@
 .arrowNav.rotate img {
     transform: rotate(180deg);
 }
+
+@media(max-width: 480px) {
+
+    .imgContainer {
+        border-radius: 10px;
+    }
+
+    .titleCollapse {
+        font-size: 20px;
+    }
+}
