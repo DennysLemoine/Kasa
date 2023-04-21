@@ -23,7 +23,7 @@ function CollapseContent(props) {
                 </div>
             </div>
             {isOpened && (
-                <p className='scrollContent'>{ props.content }</p>
+                <div className='scrollContent'>{ props.content }</div>
             )}
         </>
     )
