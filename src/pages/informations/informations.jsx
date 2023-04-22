@@ -1,8 +1,6 @@
 import React from "react";
-import {useState} from "react";
 
 import informationImg from '../../assets/Paysage02.png'
-import arrowImg from '../../assets/Arrow.svg'
 
 import CollapseContent from '../../components/collapse/collapse'
 
